@@ -3,23 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RULES BOOK</title>
+  <title>AUDITRONIX 2K25</title>
   <style>
     body {
       margin: 0;
       min-height: 100vh;
-      background: url("bg.jpg") no-repeat center center fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url("ig.jpg") no-repeat center center fixed;
       background-size: cover;
       font-family: Arial, sans-serif;
-      color: lime;
+      color: gold;
       text-align: center;
       padding: 20px;
       box-sizing: border-box;
     }
 
+    .content {
+      width: 100%;
+      max-width: 600px; /* keeps it neat */
+    }
+
     h1 {
-      margin-top: 40px;
-      font-size: 8vw; /* responsive font */
+      font-size: 8vw; /* responsive font size */
       max-font-size: 3em;
       font-weight: bold;
       color: black;
@@ -29,66 +36,43 @@
       word-wrap: break-word;
     }
 
-    .rules-images {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 20px;
-      justify-items: center;
-      margin-bottom: 40px;
-    }
-
-    .rules-images img {
-      max-width: 100%;
-      height: auto;
-      border: 2px solid #6F00FF;
-      border-radius: 8px;
-      box-shadow: 0 0 10px black;
-    }
-
-    a {
-      display: inline-block;
-      padding: 12px 25px;
+    .btn {
+      display: block;
+      margin: 15px auto;
+      padding: 15px 25px;
       background: black;
       color: gold;
-      font-size: 1.1em;
+      font-size: 5vw;
+      max-font-size: 1.2em;
+      border: 3px solid #6F00FF;
+      border-radius: 10px;
+      cursor: pointer;
       font-weight: bold;
-      border: 2px solid #6F00FF;
-      border-radius: 8px;
       text-decoration: none;
       transition: 0.3s;
+      word-wrap: break-word;
     }
 
-    a:hover {
+    .btn:hover {
       background: gold;
       color: black;
     }
 
     @media (min-width: 768px) {
-      .rules-images {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns on larger screens */
-      }
       h1 {
-        font-size: 3em;
+        font-size: 3em; /* larger for PC */
+      }
+      .btn {
+        font-size: 1.2em;
       }
     }
   </style>
 </head>
 <body>
-  <h1>RULES BOOK</h1>
-
-  <div class="rules-images">
-    <!-- Insert your 6 images below -->
-    <img src="rule1.jpg" alt="Rule 1">
-    <img src="rule2.jpg" alt="Rule 2">
-    <img src="rule3.jpg" alt="Rule 3">
-    <img src="rule4.jpg" alt="Rule 4">
-    <img src="rule5.jpg" alt="Rule 5">
-    <img src="rule6.jpg" alt="Rule 6">
+  <div class="content">
+    <h1>WELCOME TO AUDITRONIX 2K25</h1>
+    <a href="rules.html" class="btn">RULES BOOK</a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfe6M-8J2j7370diniWw_1aaLQ-cri6QEf4fJkN7LGE1_umGQ/viewform?usp=header" class="btn" target="_blank">REGISTRATION</a>
   </div>
-
-  <a href="index.html">⬅ BACK</a>
 </body>
 </html>
-
-
-
