@@ -3,54 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AUDITRONIX 2K25</title>
+  <title>RULES BOOK</title>
   <style>
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial;
-    font-weight: bold;
-    text-align: center;
-    color: white;
-    background: url("bg.jpg") no-repeat center center fixed;
-    background-size: cover;
-  }
-  
-  h1 {
-    margin-top: 350px;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    border-radius: 8px;
-    display: inline-block;
-    color: black;
-    -webkit-text-stroke: 1px gold;
-    text-shadow: 2px 2px 5px black;
-    font-size: 50px;
-  }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: url("bg.jpg") no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      color: lime;
+      text-align: center;
+      padding: 20px;
+      box-sizing: border-box;
+    }
 
-  .btn {
-    display: block;
-    width: 200px;
-    margin: 20px auto;
-    padding: 15px;
-    text-decoration: none;
-    color: gold;
-    background: black;
-    border-radius: 8px;
-    border: 2px solid #6F00FF;
-    font-size: 18px;
-  }
-  .btn:hover {
-    background: gold;
-    color: black;
-  }
-</style>
+    h1 {
+      margin-top: 40px;
+      font-size: 8vw; /* responsive font */
+      max-font-size: 3em;
+      font-weight: bold;
+      color: black;
+      -webkit-text-stroke: 2px gold;
+      text-shadow: 2px 2px 5px black;
+      margin-bottom: 30px;
+      word-wrap: break-word;
+    }
+
+    .rules-images {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      justify-items: center;
+      margin-bottom: 40px;
+    }
+
+    .rules-images img {
+      max-width: 100%;
+      height: auto;
+      border: 2px solid #6F00FF;
+      border-radius: 8px;
+      box-shadow: 0 0 10px black;
+    }
+
+    a {
+      display: inline-block;
+      padding: 12px 25px;
+      background: black;
+      color: gold;
+      font-size: 1.1em;
+      font-weight: bold;
+      border: 2px solid #6F00FF;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    a:hover {
+      background: gold;
+      color: black;
+    }
+
+    @media (min-width: 768px) {
+      .rules-images {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on larger screens */
+      }
+      h1 {
+        font-size: 3em;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>WELCOME TO AUDITRONIX 2K25</h1>
+  <h1>RULES BOOK</h1>
 
-  <a href="rules.html" class="btn">RULE BOOK</a>
-  <a href="thankyou.html" class="btn">REGISTRATION</a>
+  <div class="rules-images">
+    <!-- Insert your 6 images below -->
+    <img src="rule1.jpg" alt="Rule 1">
+    <img src="rule2.jpg" alt="Rule 2">
+    <img src="rule3.jpg" alt="Rule 3">
+    <img src="rule4.jpg" alt="Rule 4">
+    <img src="rule5.jpg" alt="Rule 5">
+    <img src="rule6.jpg" alt="Rule 6">
+  </div>
+
+  <a href="index.html">⬅ BACK</a>
 </body>
 </html>
 
